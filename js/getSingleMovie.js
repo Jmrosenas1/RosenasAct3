@@ -26,7 +26,10 @@ const singleMovieTemplate = (data) => {
                 <a href="index.html">
                 back
                 </a>
-               <h3>${data.title}</h3>
+
+               <h2>${data.title}</h2>
+               <h3>${data.overview}</h3>
+               <h3>${data.vote_average}</h3>
            `;
 };
 

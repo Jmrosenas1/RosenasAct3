@@ -45,9 +45,7 @@ const movieListTemplate = (data) => {
   row.innerHTML = data
     .map((movie) => {
       return `
-             <a href="singleMovie.html?movie=${
-               movie.id
-             }" onclick="return false" ondblclick="location=this.href">
+             <a href="singleMovie.html?movie=${movie.id}" onclick="return false" ondblclick="location=this.href">
              <div class="movie">
              <img src="${IMAGE_BASE_URL + movie.backdrop_path}" alt="image">
           
@@ -56,7 +54,7 @@ const movieListTemplate = (data) => {
                  <span class="green">${movie.vote_average}</span>
              </div>
             <div class="overview">
-             <h3> Overview</h3>S
+             <h3> Overview</h3>
             ${movie.overview}
             </div> 
          </div>

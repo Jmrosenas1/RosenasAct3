@@ -28,6 +28,33 @@ body {
   }
 }
 
+nav{
+  font-size: 2rem;
+  align-items: center;
+  color: black;
+  background: linear-gradient(yellow,lime);
+  animation-name: bounce;
+  animation-duration: 2s;
+  transform-origin: top;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {transform: scale(1,1) translateY(0);}
+  10% {transform: scale(1,1,.9) translateY(0);}
+  30% {transform: scale(.9,1,1) translateY(-100px);}
+  50% {transform: scale(1.05,.95) translateY(0);}
+  57% {transform: scale(1,1) translateY(-7px);}
+  64% {transform: scale(1,1) translateY(0);}
+  100% {transform: scale(1,1) translateY(0);}
+}
+
+p {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 470px;
+  text-shadow: 2.5px 2.5px 1.5px #000;
+} 
 header {
   padding: 1rem;
   display: flex;
@@ -44,6 +71,21 @@ header {
   font-size: 1rem;
   color: #fff;
   font-family: inherit;
+  
+  font-weight: bold;
+  color: #200 !important;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  border: 5px outset white;
+  box-shadow: 0 0 15px -1px rgb(153, 255, 153), 0 0 1px -1px rgb(0, 180, 230) inset;
+  border-radius: 120px;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  0% {background: radial-gradient(circle, cornsilk, white)}
+  50% {background: radial-gradient(circle, cornsilk, springgreen)}
+  100% {background: radial-gradient(circle, cornsilk, Lime)}
 }
 
 .search:focus {
@@ -121,3 +163,61 @@ header {
 .movie:hover .overview {
   transform: translateY(0);
 }
+
+/* Single Movie
+.movie-page{
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+}
+.movie-image{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.movie-image img{
+  object-fit: cover;
+  height: 500px;
+  border-radius: 10px;
+  
+  
+}
+.movie-page h2,h4,h5{
+  padding: 0;
+  margin: 10px;
+}
+.movie-page h5{
+  font-weight: 500;
+}
+a{
+  text-decoration: none;
+  color: #007CBD;
+}
+
+
+
+
+@media(min-width:768px) and (max-width:1025px){
+  .movies-container{
+      padding: 0;
+  }
+}
+@media(max-width:768px){
+  body{
+      padding: 0 10px;
+  }
+  .movies-container{
+      padding: 0;
+  }
+  .movie-page{
+      flex-direction: column;
+  }
+  .movie-image img{
+      height: 400px;
+  }
+}
+*/
