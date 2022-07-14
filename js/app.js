@@ -1,4 +1,4 @@
-//Pwede baguhin yung name ng variable
+
 const form = document.getElementById("search_form");
 const row = document.querySelector(".row");
 
@@ -22,7 +22,7 @@ const getUpcomingMovie = async () => {
 
 getUpcomingMovie();
 
-//Code para sa search
+//Ito yung Code para sa search
 const searchFunction = async (event) => {
   event.preventDefault();
 
@@ -64,5 +64,3 @@ const movieListTemplate = (data) => {
     })
     .join("");
 };
-
-//Yung nasa href sa A tag palitan lang kung anong name nung page para sa single movie

@@ -10,13 +10,13 @@
 }
 
 body {
-  background: radial-gradient(closest-corner at 60% 55%, darkmagenta, midnightblue, navy, red, yellow, crimson);
+  background: radial-gradient(closest-corner at 60% 55%,darkmagenta,midnightblue,navy, red ,yellow, crimson);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
-@keyframes gradient{ 
+@keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -28,11 +28,11 @@ body {
   }
 }
 
-nav{
+nav {
   font-size: 2rem;
   align-items: center;
   color: black;
-  background: linear-gradient(yellow,lime);
+  background: linear-gradient(yellow, lime);
   animation-name: bounce;
   animation-duration: 2s;
   transform-origin: top;
@@ -40,13 +40,27 @@ nav{
   animation-timing-function: ease;
 }
 @keyframes bounce {
-  0% {transform: scale(1,1) translateY(0);}
-  10% {transform: scale(1,1,.9) translateY(0);}
-  30% {transform: scale(.9,1,1) translateY(-100px);}
-  50% {transform: scale(1.05,.95) translateY(0);}
-  57% {transform: scale(1,1) translateY(-7px);}
-  64% {transform: scale(1,1) translateY(0);}
-  100% {transform: scale(1,1) translateY(0);}
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1, 1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1, 1) translateY(-100px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
 }
 
 p {
@@ -54,13 +68,13 @@ p {
   font-weight: bold;
   margin-left: 470px;
   text-shadow: 2.5px 2.5px 1.5px #000;
-} 
+}
 header {
   padding: 1rem;
   display: flex;
   justify-content: flex-end;
   background: linear-gradient(red, green);
-  text-shadow: 0px 0px 0 rgba(0,0,0,0);
+  text-shadow: 0px 0px 0 rgba(0, 0, 0, 0);
 }
 
 .search {
@@ -71,7 +85,7 @@ header {
   font-size: 1rem;
   color: #fff;
   font-family: inherit;
-  
+
   font-weight: bold;
   color: #200 !important;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -82,10 +96,14 @@ header {
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
+
 @keyframes example {
-  0% {background: radial-gradient(circle, cornsilk, white)}
-  50% {background: radial-gradient(circle, cornsilk, springgreen)}
-  100% {background: radial-gradient(circle, cornsilk, Lime)}
+  0% {background: radial-gradient(circle, cornsilk, white);
+  }
+  50% {background: radial-gradient(circle, cornsilk, springgreen);
+  }
+  100% {background: radial-gradient(circle, cornsilk, Lime);
+  }
 }
 
 .search:focus {
@@ -153,7 +171,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: black;
   padding: 1rem;
   max-height: 100%;
   transform: translateY(101%);
@@ -162,6 +180,36 @@ header {
 
 .movie:hover .overview {
   transform: translateY(0);
+}
+.container {
+  padding: 2rem;
+  color: white;
+  width: 100%;
+}
+
+.return-btn {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.similar-title {
+  margin-top: 4rem;
+}
+
+.similar-movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-container {
+  width: 100%;
+}
+
+.single-img {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
 }
 
 /* Single Movie
